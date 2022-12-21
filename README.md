@@ -16,7 +16,11 @@ Where user can access projects developed by me.
 *Contact Me
 Where user will have access to contact information as well as professional social media.
 
+Credits
+UCF Coding Bootcamp
 
+License
+N/A
 
 
 
