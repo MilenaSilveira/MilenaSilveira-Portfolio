@@ -40,7 +40,7 @@ li {
     /*Set background image*/
 header {
     background-color: var(--blush);
-    background-image: url(/assets/Images/back.jpg);
+    background-image: url(./assets/Images/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
