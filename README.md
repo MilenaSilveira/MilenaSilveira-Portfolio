@@ -18,6 +18,7 @@ Where user can access projects developed by me.
 *Contact Me
 Where user will have access to contact information as well as professional social media.
 
+<<<<<<< HEAD
 
 Credits
 
@@ -26,3 +27,15 @@ UCF Coding Bootcamp
 License
 
 N/A
+=======
+Credits
+UCF Coding Bootcamp
+
+License
+N/A
+
+
+
+
+
+>>>>>>> de89afb5c2379f0122677fcc6f27087e5e30b2f1
