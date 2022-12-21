@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio Milena Silveira</title>
 </head>
+
 <body>
     <header>
         <nav>
             <h1>Milena Silveira</h1>
             <ul>
-                <li> <a href="About"> About Me </a></li>
-                <li> <a href="#"> Work </a></li>
-                <li> <a href="#"> Contact Me </a></li>
+                <li> <a href="#About"> About Me </a></li>
+                <li> <a href="#Work"> Work </a></li>
+                <li> <a href="#Contact"> Contact Me </a></li>
                 <li> <a href="#"> Resume </a></li>
             </ul>
         </nav>
-        <img src="" alt="">
-        <p>Cool subtitle here!</p>
+        <img src="/assets/Images/profile2.jpg" alt="Profile photo">
+        <p>Welcome!</p>
     </header>
 
     <main>
-        <section id="About">
+        <section id="About" class="about-box">
             <h2>About Me</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
@@ -35,27 +36,42 @@
             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </section>
 
-        <section>
+        <section id="Work" class="work-box">
+            <h2>Work</h2>   
 
+         
+        <article>    
+            <a href="#"> <div class="container1 row column justify-center">
+              <img src="/assets/Images/apps.jpg" alt="Apps">
+
+                <h4>Apps</h4>
+            </div></a>
+
+             
+           <a href="#"> <div class="container2 row column justify-center">
+                <img src="/assets/Images/weather.jpg" alt="Storm Icon">
+                <img src="/assets/Images/puzzle2.jpg" alt="Puzzle Pieces">
+            </div> </a>
+            
+
+           <a href="#"> <div class="container3 row column justify-center">
+                <img src="/assets/Images/music.jpg" alt="Piano">
+                <img src="/assets/Images/chess.png" alt="Chess Game">
+                </div></a>
+
+        </article>
         </section>
 
-        <section>
-
-
-        </section>
-
-
+        <section id="Contact" class="contact-box">
+            <h3>Contact Me</h3>
+            <ul>
+                <li>407-000-0000</li>
+                <li>email@email.com</li>
+                <li>GitHub</li>
+                <li>Linkedin</li>
+            </ul>
+        </section> 
     </main>
-
-    <aside>
-
-
-    </aside>
-
-    <footer>
-
-    </footer>
-
-    
+ 
 </body>
 </html>

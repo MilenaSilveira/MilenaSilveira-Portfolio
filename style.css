@@ -1,17 +1,34 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+    --blush: #a56c6c;
+    --blue: #1c4966;
+    --beige: #d4c6aa;
+
+}
+
 nav {
+    padding-top: 1rem;
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: var(--blush);
+}
+nav a {
+    color: var(--blue);
+
 }
  /*Repodition to the right*/
 header p {
-    
-    background-color: aqua;
+    color: #d4c6aa;
+    background-color: var(--blue);
+    padding: .5rem;
     position: absolute;
     top: 20vh;
     right: 10vh;
     
 }
+
 
 
 li {
@@ -22,25 +39,38 @@ li {
 }
     /*Set background image*/
 header {
-    background-color: rgb(74, 69, 69);
-    background-image: url(/assets/Images/gray.jpg);
+    background-color: var(--blush);
+    background-image: url(/assets/Images/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 25vh;
 
 }
+header img {
+    margin-left: 2rem;
+    border: 5px solid var(--blue);
+    width: 10rem;
+}
 
     /*Moves background to the left of page*/
 h1 {
-    margin: 25px 0px 25px -25px;
+    margin: 1.5rem 0 1.5rem -1.5rem;
     padding: 10px 10px 10px 10%;
-    background-color: aqua;
+    color: #d4c6aa;
+    background-color: var(--blue);
+    
+}
+body {
+    background-color: #faf6f5;
     
 }
 
 h2 {
+    color: #1c4966;
     line-height: 1.5;
-    padding: 15px;
-    font-size: 45px;
+    padding: 1rem;
+    font-size: 2rem;
     text-align: right;
     position: relative;
     left: 10vh;
@@ -48,26 +78,168 @@ h2 {
 
 }
 
+h4 {
+    color: var(--blue);
+    line-height: 1.5rem;
+    text-align: center;
+    background-color: #dcc0ba;
+    width: 100%;
+}
 
-#About {
+/* Positioning*/
+
+article {
+    float: right;
+    padding: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    display: block;
+    border-radius: 1rem;
+    float: right;
+    min-width: 55%;
+}
+
+/*Box alignment*/
+.row {
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.column {
+    flex: 1 0 100%;
+    transition: flex-basis 500ms linear;
+}
+
+.about-box {
     display: flex;
     justify-content: space-around;
 
 }
 
-#About p {
+/*Main section*/
+.about-box p {
 
-    font-size: 25px;
-    margin: 80px 65px 0px 40px;
+    font-size: 1.2rem;
+    margin: 6rem 4rem 5rem 2.5rem;
     text-align: justify;
-    
-    
 }
 
-#About h2 {
-    border-right: 5px solid blueviolet;
+.about-box h2 {
+    border-right: 5px solid var(--blush);
+    line-height: 1.5rem;
+    margin: 6rem 8rem;
+    padding: 0 2rem 7rem 1rem;
+    float: left;
+}
+
+.work-box {
+    display: flex;
+}
+
+.work-box h2 {
+    border-right: 5px solid var(--blush);
     line-height: 1.5;
-    margin: 4% 12%;
-    padding: 0px 2%  7% 
+    margin: 4rem 8rem;
+    padding: 0rem 2rem 30rem;
 }
 
+/*Image containers*/
+
+.container1{
+    
+    border: solid 5px var(--blue);
+    margin: 1rem;
+}
+
+.container1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.6rem;
+    display: flex;
+    margin: .5rem;
+}
+
+.container2 img {
+    
+    margin: 1px;
+    width: 49%;
+    height: 50%;
+    object-fit: cover;
+    border: solid 5px var(--blue);
+    max-width: 100%;
+    height: auto;
+}
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49.6rem;
+    display: flex;
+    margin: .5rem;
+}
+
+.container3 img {
+    
+    margin: 1px;
+    width: 49%;
+    height: 50%;
+    object-fit: cover;
+    border: solid 5px var(--blue);
+    max-width: 100%;
+    height: auto;
+}
+
+/*Page bottom*/
+.contact-box {
+    padding-top: .5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--blush);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-box li {
+    color: var(--blue);
+}
+
+.contact-box h3 {
+    margin: 1.5rem 0 1.5rem -1.5rem;
+    padding: 10px 10px 10px 10%;
+    color: #d4c6aa;
+    background-color: var(--blue);
+}
+
+@media (min-width: 768px) {
+   
+    .container1 .container2 .container3 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  
+   
+    .container1 .container2 .container3 {
+      flex-grow: 1;
+    }
+  }
+  
+
+  @media (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+}
