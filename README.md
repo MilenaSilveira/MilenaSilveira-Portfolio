@@ -1,8 +1,10 @@
 Milena Silveira Portfolio
 
-As a coding bootcamp student I would like to present my Portfolio to future employers.
 
-As a part of developing this project I used HTML and CSS to structure and design it's layout.
+Project Description
+
+As a coding bootcamp student I would like to present my Portfolio to future employers, and for that 
+this project was developed using HTML and CSS to structure and design it's layout.
 
 Usage
 
